@@ -1,4 +1,4 @@
-# School-Work
+# Descriptions
 This repo is used to store all my school work including Homework and Labs
 
 CISC1610 Computer Science I - Fordham University
