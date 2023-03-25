@@ -33,7 +33,7 @@ Time: Fall 2022
 This course introduces students to basic concepts in computer organization. It covers binary, octal and hex arithmetic, digital logic, machine and assembly language programming and processor architecture. Students are expected to have had introductory classes in programming and in discrete math. Course assignments will include a focus on both theoretical and practical issues and will include programming assignments.
 
 
-CISC3593 Operating Systems - Fordham University
+CISC3595 Operating Systems - Fordham University
 Instructor: Samuel Kamens
 Time: Spring 2023
 This course objective was to develop an understanding of the role of operating systems in the management of the hardware used to process application programs. Problems of resolving deadlock, exclusion, and synchronization, and inter-process communication, queuing, and network control are covered. Topics include: memory management, device management, interrupt systems and systems programming.
