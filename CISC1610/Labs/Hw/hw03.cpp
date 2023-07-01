@@ -12,15 +12,18 @@
 #include <iomanip>
 #include <cmath>
 
-double random ( unsigned int &seed );
+double random ( unsigned int &seed ); // Function prototype for generating random numbers
+
+unsigned int seed = 5; // Seed value for random number generation
 unsigned int seed = 5;
 
 using namespace std;
 
 int main()
 {
-   double x_org, y_org, x, y, distance;
-   double farthest = 0, farthest_x, farthest_y;
+   double x_org, y_org, x, y, distance;  // Variables to hold coordinate values and distance calculations
+   double farthest = 0, farthest_x, farthest_y;  // Variables to store the farthest point and its coordinates
+
 
    cout << endl;
    cout << "Enter an x-coordinate between 0.0000 and 1.0000: ";
@@ -30,27 +33,31 @@ int main()
 
    for (int i = 1; i < 11; ++i)
    {
-      x = random(seed);
-      y = random(seed);
+      x = random(seed);  // Generate a random x-coordinate
+      y = random(seed);  // Generate a random y-coordinate
       
-      distance = sqrt(pow((x_org - x), 2) + pow((y_org - y), 2));
-      if (distance > farthest)
+      distance = sqrt(pow((x_org - x), 2) + pow((y_org - y), 2));  // Calculate the distance between the origin point and the random point
+      
+      if (distance > farthest)  // Check if the current distance is greater than the farthest distance
       {
-	  farthest = distance;
-	  farthest_x = x;
-	  farthest_y = y;
+	  farthest = distance;// Update the farthest distance
+	  farthest_x = x;  // Update the x-coordinate of the farthest point
+	  farthest_y = y;  // Update the y-coordinate of the farthest point
       }
     }
 
    cout << endl;
-   cout << fixed << showpoint << setprecision(4);
+   cout << fixed << showpoint << setprecision(4);  // Set the output format to display four decimal places
    cout << "                       x       y" << endl;
    cout << "Point of origin:       ";
-   cout << setw(6) << x_org << ", " << setw(6) << y_org << endl;
+   cout << setw(6) << x_org << ", " << setw(6) << y_org << endl;  // Display the coordinates of the origin point
+
    cout << "Farthest random point: ";
-   cout << setw(6) << farthest_x << ", " << setw(6) << farthest_y << endl;
+   cout << setw(6) << farthest_x << ", " << setw(6) << farthest_y << endl;  // Display the coordinates of the farthest random point
    cout << endl;
-   cout << "Distance:              " << setw(6) << farthest << endl;
+   cout << endl;
+   cout << "Distance:              " << setw(6) << farthest << endl;  // Display the farthest distance
+   cout << endl;
    cout << endl;
        
    return 0;
